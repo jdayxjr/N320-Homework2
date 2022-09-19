@@ -28,11 +28,18 @@ class percussion extends Instrument {
 }
 
 
-playNext() {
-    console.log(this.type + " " + this.play + " at " + this.loudness);
+play() {
+    console.log(this.type.Woodwind + " " + this.play.Woodwind + " at " + this.loudness(3));
 }
 
 
+playNext() {
+    console.log(this.type.string + " " + this.play.string + " at " + this.loudness(4));
+}
+
+playNext() {
+    console.log(this.type.percussion + " " + this.play.percussion + " at " + this.loudness(5));
+}
 
 
 
