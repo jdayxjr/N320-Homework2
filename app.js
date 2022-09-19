@@ -1,33 +1,45 @@
-class instrument {
+class Instrument {
 
     constructor(loudness, family, play) {
         this.loudness = loudness;
         this.family = family;
         this.play = play;
     }
-
 }
 
-let pInstrument = {
-    duration: '3',
-
-    function() {
-
-        console.log(instrument);
+class Woodwind extends Instrument {
+    constructor(loudness) {
+        super(loudness, "clarinet", "toots");
     }
-
 }
 
-class woodwind {
 
-
+class string extends Instrument {
+    constructor(loudness) {
+        super(loudness, "guitar", "ring");
+    }
 }
 
-class percussion {
 
-
+class percussion extends Instrument {
+    constructor(loudness) {
+        super(loudness, "guitar", "ring");
+    }
 }
 
-class string {
 
+playNext() {
+    console.log(this.type + " " + this.play + " at " + this.loudness);
 }
+
+
+
+
+
+
+
+
+
+
+
+
