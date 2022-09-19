@@ -23,7 +23,7 @@ class string extends Instrument {
 
 class percussion extends Instrument {
     constructor(loudness) {
-        super(loudness, "guitar", "ring");
+        super(loudness, "drums", "boom");
     }
 }
 
